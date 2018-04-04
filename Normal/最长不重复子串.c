@@ -43,7 +43,7 @@ int lengthOfLongestSubstring(char* s) {
     int length=strlen(s);  
     while(j<length)  
     {  
-        if(b[(int)s[j]]==1)  
+        if(b[(int)s[j]]==1)                          //char强制转换成int型
         {  
             while(s[i]!=s[j]) b[(int)s[i++]]=0;      //遇到重复字符s[j],则i置到前一个一样的字符位置，之间字符重复flag置0
             i++;                                     //i置于下一个位置
